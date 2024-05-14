@@ -1,0 +1,294 @@
+@font-face {
+    font-family: Dosis;
+    src: url(../Font/Dosis-Regular.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Dosis;
+    box-sizing: border-box;
+}
+.first{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.select{
+    background-color: #B0B435;
+    padding: 5px;
+    border: none;
+}
+.select option{
+    background-color: white;
+    
+}
+.first-child{
+    font-size: 12px;
+    padding: 10px;
+}
+.first-child a{
+    text-decoration: none;
+    color: white;
+}
+.first-child ul a:nth-child(2),ul a:nth-child(3){
+    border-right:2px solid white ;
+    padding: 5px;
+}
+.select2{
+    background-color: #B0B435;
+    border: none;
+    padding: 5px;
+}
+.select2 option{
+    background-color: white;
+}
+.off i{
+    color: #B0B435;
+}
+.off a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    background-color: #F8F9FA;
+    /* width: 100%; */
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.navbar>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.navigation{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    align-items: center;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    color:white;
+    padding: 20px;
+    display: none;
+    
+}
+.navigation li{
+    list-style: none;
+}
+a:hover{
+   color: #B0B435;
+
+}
+.menu a{
+    padding: 0px;
+    color: #666666;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.menu li{
+    margin:10px;
+}
+.menu li:hover{
+    color: #B0B435;
+} 
+a{
+    text-decoration: none;
+}
+.navigation li:nth-child(3):hover .menu{
+    display: block;
+
+}
+a:hover{
+    color: #B0B435;
+}   
+.logo{
+    width: 15%;
+
+}
+.serch-icon a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+}
+.serch-icon a:hover{
+    color: #B0B435;
+}
+.footer{
+    padding-top: 40px;
+    background-color: black;
+    display: flex;
+    line-height: 25px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+.first-fot{
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid white;
+}
+.footer h3{
+    border-bottom: 2px solid #B0B435;
+    margin-bottom: 15px;
+
+}
+.fot-content2 button{
+    display: block;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    background-color: #B0B435;
+}
+.fot-content2 .ioo {
+    font-size: large;
+    position: relative;
+    right: 10%;
+    background-color:white ;
+    color: black;
+}
+#email{
+    width: 80%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.233);
+    border-radius: 2px;
+    color: black;
+    font-size: large;
+    padding:5px;
+}
+.fot-content2 button:hover{
+    background-color: black;
+    border: 1px solid #B0B435;
+    color: white;
+}
+.second-fot{
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.bx2{
+    width: 25%;
+}
+.fot-content3 i{
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 10px;
+}
+.fot-content3 i:hover{
+    color: #B0B435;
+    border: 2px solid #B0B435;
+}
+.fot-content5 a{
+    text-decoration: none;
+    color: white;
+}
+.fot-content5 a:hover{
+    color: #B0B435;
+    margin-left: 3px;
+}
+.end{
+    width: 100%;   
+    text-align: center;
+    padding-bottom: 20px;
+}
+.end a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #B0B435;
+}
+@media screen and (min-width:250px) and (max-width:500px) {
+    body{
+        font-size: x-small;
+    }
+    .first{
+        display: none;
+    }
+    .serch-icon{
+        display: none;
+    }
+    .logo{
+        width: 30%;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation {
+        width: 100%;        
+        padding: 10px 0px 20px 10px;
+    }
+    .navigation a{ 
+        padding: 0px;
+    }
+    .navbar>a{
+     display: none;
+    }
+    .bx2{
+        width: 80%;
+    }
+    
+
+}
+@media screen and (min-width:501px) and (max-width:768px) {
+    body{
+        font-size: x-small;
+    }
+    .first{
+        display: none;
+    }
+    .serch-icon{
+        display: none;
+    }
+    .logo{
+        width: 30%;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation {
+        width: 100%;        
+        padding: 10px 0px 20px 10px;
+    }
+    .navigation a{ 
+        padding: 0px;
+    }
+    .navbar>a{
+     display: none;
+    }
+    .bx2{
+        width: 80%;
+        padding: 10px;
+    }
+}
